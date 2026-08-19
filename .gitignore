@@ -1,0 +1,33 @@
+# Environment and secret files
+.env
+.env.local
+*.env
+
+# Python virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Installed library cache / local dependencies
+lib/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# SQLite Local Database
+*.db
+schemeready.db
+
+# Uploaded Sandbox Files
+uploads/*
+!uploads/.gitkeep
+
+# IDE and OS generated files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

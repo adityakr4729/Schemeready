@@ -1,0 +1,457 @@
+[
+  {
+    "scheme_id": "SCH001",
+    "scheme_name": "UP Post-Matric Scholarship & Fee Reimbursement",
+    "ministry": "Department of Social Welfare",
+    "department": "Government of Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "category": "Scholarship",
+    "description": "Financial assistance and tuition fee reimbursement for Post-Matric students residing in Uttar Pradesh pursuing Higher Education (Diploma, Graduation, B.Tech, Post Graduation).",
+    "benefits": "100% Tuition Fee Reimbursement + Monthly Maintenance Allowance up to ₹12,000/year.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "eq",
+        "value": "Uttar Pradesh",
+        "label": "Domicile must be Uttar Pradesh",
+        "failure_reason": "Applicant must be a permanent resident/domicile of Uttar Pradesh."
+      },
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Must be currently enrolled student",
+        "failure_reason": "Applicant must currently be an active student."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual family income ≤ ₹2,50,000",
+        "failure_reason": "Annual family income exceeds the maximum permitted limit of ₹2,50,000 for this scheme."
+      },
+      {
+        "field": "age",
+        "operator": "gte",
+        "value": 16,
+        "label": "Age must be at least 16 years",
+        "failure_reason": "Applicant age is below the minimum required age of 16 years."
+      },
+      {
+        "field": "age",
+        "operator": "lte",
+        "value": 30,
+        "label": "Age must be at most 30 years",
+        "failure_reason": "Applicant age exceeds the maximum age limit of 30 years."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Identity and UIDAI verification proof",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Government issued family income certificate (valid within 3 years)",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_DOMICILE",
+        "name": "Domicile Certificate",
+        "description": "Proof of permanent residence in Uttar Pradesh",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Last qualifying examination marksheet (Class 10/12/Semester)",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Bank account linked with Aadhaar for Direct Benefit Transfer (DBT)",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-11-15",
+    "renewal_required": true,
+    "renewal_information": "Annual renewal required upon passing to the next academic semester/year with minimum 50% attendance.",
+    "application_url": "https://scholarship.up.gov.in",
+    "official_source_url": "https://scholarship.up.gov.in/index.aspx",
+    "last_updated": "2026-08-01"
+  },
+  {
+    "scheme_id": "SCH002",
+    "scheme_name": "PM YASASVI Central Sector Scholarship",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "department": "Department of Social Justice",
+    "state": "All India",
+    "category": "Scholarship",
+    "description": "PM Young Achievers Scholarship Award Scheme for Vibrant India for OBC, EBC and DNT students studying in Top Class Schools and Colleges.",
+    "benefits": "Scholarship up to ₹1,25,000 per annum for college students covering tuition and hostel fees.",
+    "eligibility_rules": [
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Must be currently enrolled student",
+        "failure_reason": "Applicant must be an active student."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual family income ≤ ₹2,50,000",
+        "failure_reason": "Annual family income exceeds ₹2,50,000 limit."
+      },
+      {
+        "field": "age",
+        "operator": "gte",
+        "value": 15,
+        "label": "Age must be at least 15 years",
+        "failure_reason": "Applicant age is below 15 years."
+      },
+      {
+        "field": "age",
+        "operator": "lte",
+        "value": 25,
+        "label": "Age must be at most 25 years",
+        "failure_reason": "Applicant age exceeds 25 years."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Government identity card",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Family income proof issued by Tehsildar/Competent Authority",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_CATEGORY",
+        "name": "Caste/Category Certificate",
+        "description": "OBC / EBC / DNT Category Certificate",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Class 10/12 Marksheet with minimum qualifying percentage",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Aadhaar seeded bank account details",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-10-31",
+    "renewal_required": true,
+    "renewal_information": "Renewal required every year subject to promotion to higher class.",
+    "application_url": "https://yet.nta.ac.in",
+    "official_source_url": "https://socialjustice.gov.in/schemes/yasasvi",
+    "last_updated": "2026-07-20"
+  },
+  {
+    "scheme_id": "SCH003",
+    "scheme_name": "Central Sector Scheme of Scholarship for College & University Students (CSSS)",
+    "ministry": "Ministry of Education",
+    "department": "Department of Higher Education",
+    "state": "All India",
+    "category": "Scholarship",
+    "description": "Merit-cum-means scholarship aimed at providing financial support to meritorious students from low income families pursuing graduate and post-graduate studies.",
+    "benefits": "₹12,000 per annum at Graduation level for first 3 years and ₹20,000 per annum at Post-Graduation level.",
+    "eligibility_rules": [
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Must be currently enrolled student",
+        "failure_reason": "Must be enrolled in a regular higher education course."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 450000,
+        "label": "Annual family income ≤ ₹4,50,000",
+        "failure_reason": "Annual family income exceeds ₹4,50,000 limit."
+      },
+      {
+        "field": "age",
+        "operator": "gte",
+        "value": 17,
+        "label": "Age must be at least 17 years",
+        "failure_reason": "Applicant age is below 17 years."
+      },
+      {
+        "field": "age",
+        "operator": "lte",
+        "value": 26,
+        "label": "Age must be at most 26 years",
+        "failure_reason": "Applicant age exceeds 26 years."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Aadhaar identity proof",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Valid family income certificate",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Class 12th Board Marksheet showing top 80th percentile rank",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_FEE_RECEIPT",
+        "name": "Admission Fee Receipt",
+        "description": "Current academic year institute admission fee receipt",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Bank account copy for direct scholarship disbursement",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-12-15",
+    "renewal_required": true,
+    "renewal_information": "Renewable up to 5 years subject to 50%+ marks in annual exams and 75% attendance.",
+    "application_url": "https://scholarships.gov.in",
+    "official_source_url": "https://www.education.gov.in/scholarships-education-loan",
+    "last_updated": "2026-08-05"
+  },
+  {
+    "scheme_id": "SCH004",
+    "scheme_name": "AICTE Pragati Scholarship Scheme for Girl Students",
+    "ministry": "Ministry of Education",
+    "department": "All India Council for Technical Education (AICTE)",
+    "state": "All India",
+    "category": "Scholarship",
+    "description": "Scholarship dedicated to empowering female students pursuing technical education (Degree or Diploma in Engineering/Technology) in AICTE approved institutions.",
+    "benefits": "₹50,000 per annum for total duration of the course (towards tuition fee, computer purchase, books, hostel fees).",
+    "eligibility_rules": [
+      {
+        "field": "gender",
+        "operator": "in",
+        "value": ["Female", "Other"],
+        "label": "Girl student or eligible category",
+        "failure_reason": "Scheme is specifically designated for girl students entering technical degree/diploma programs."
+      },
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Enrolled in AICTE technical course",
+        "failure_reason": "Applicant must be a student enrolled in technical degree/diploma."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 800000,
+        "label": "Annual family income ≤ ₹8,00,000",
+        "failure_reason": "Annual family income exceeds ₹8,00,000 ceiling."
+      },
+      {
+        "field": "age",
+        "operator": "lte",
+        "value": 30,
+        "label": "Age ≤ 30 years",
+        "failure_reason": "Applicant age exceeds maximum limit."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Income Certificate for current financial year",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Class 10 and 12 mark sheets",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_FEE_RECEIPT",
+        "name": "Admission Fee Receipt",
+        "description": "AICTE college admission proof",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Student single bank account passbook",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-11-30",
+    "renewal_required": true,
+    "renewal_information": "Renewable annually based on passing certificate and recommendation from college principal.",
+    "application_url": "https://scholarships.gov.in",
+    "official_source_url": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati",
+    "last_updated": "2026-07-15"
+  },
+  {
+    "scheme_id": "SCH005",
+    "scheme_name": "PM-Vidyalaxmi Education Financial Assistance",
+    "ministry": "Ministry of Education",
+    "department": "Department of Higher Education",
+    "state": "All India",
+    "category": "Financial Assistance",
+    "description": "Collateral-free, interest-subsidized education loan and financial support for students securing admission to top quality Higher Education Institutions (QHEIs).",
+    "benefits": "Full tuition fee financial coverage + 3% interest subvention for family income up to ₹8 Lakhs.",
+    "eligibility_rules": [
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Admitted to higher education institution",
+        "failure_reason": "Applicant must be enrolled or admitted to higher education."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 800000,
+        "label": "Annual family income ≤ ₹8,00,000",
+        "failure_reason": "Family income exceeds maximum threshold of ₹8,00,000."
+      },
+      {
+        "field": "age",
+        "operator": "gte",
+        "value": 17,
+        "label": "Age must be at least 17 years",
+        "failure_reason": "Minimum age limit is 17 years."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Aadhaar identity document",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Proof of annual family income",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Class 10/12 and Entrance Exam rank card",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_FEE_RECEIPT",
+        "name": "Admission Fee Receipt",
+        "description": "Admission offer letter / fee structure from institution",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Student/Co-borrower bank account details",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-12-31",
+    "renewal_required": false,
+    "renewal_information": "Renewal not required / automatically extended throughout the course duration subject to academic progress.",
+    "application_url": "https://www.vidyalakshmi.co.in",
+    "official_source_url": "https://www.vidyalakshmi.co.in/Students/index",
+    "last_updated": "2026-08-10"
+  },
+  {
+    "scheme_id": "SCH006",
+    "scheme_name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "ministry": "Ministry of Education",
+    "department": "Department of School Education & Literacy",
+    "state": "All India",
+    "category": "Scholarship",
+    "description": "Scholarship for economically weaker meritorious students to arrest drop-out rates and encourage higher education.",
+    "benefits": "₹12,000 per annum (₹1,000 per month) for secondary and higher secondary education.",
+    "eligibility_rules": [
+      {
+        "field": "is_student",
+        "operator": "eq",
+        "value": true,
+        "label": "Must be an active student",
+        "failure_reason": "Must be currently studying in recognized institution."
+      },
+      {
+        "field": "annual_family_income",
+        "operator": "lte",
+        "value": 350000,
+        "label": "Annual family income ≤ ₹3,50,000",
+        "failure_reason": "Annual family income exceeds ₹3,50,000 limit."
+      },
+      {
+        "field": "age",
+        "operator": "lte",
+        "value": 22,
+        "label": "Age ≤ 22 years",
+        "failure_reason": "Age exceeds 22 years."
+      }
+    ],
+    "required_documents": [
+      {
+        "doc_id": "DOC_AADHAAR",
+        "name": "Aadhaar Card",
+        "description": "Student Aadhaar identification",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_INCOME",
+        "name": "Income Certificate",
+        "description": "Competent authority family income certificate",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_MARKSHEET",
+        "name": "Educational Marksheet",
+        "description": "Class 7th/8th/10th Marksheet (55%+ aggregate)",
+        "mandatory": true
+      },
+      {
+        "doc_id": "DOC_BANK",
+        "name": "Bank Passbook",
+        "description": "Single account bank passbook linked to Aadhaar",
+        "mandatory": true
+      }
+    ],
+    "deadline": "2026-10-15",
+    "renewal_required": true,
+    "renewal_information": "Annual renewal on National Scholarship Portal upon passing to next class with 55%+ marks.",
+    "application_url": "https://scholarships.gov.in",
+    "official_source_url": "https://dsel.education.gov.in/nmmss",
+    "last_updated": "2026-07-28"
+  }
+]
